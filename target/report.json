@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-24T00:58:53.485Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1474000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.setUpDBConnection()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify the homework first question\u0027s answer with DB",
+        "description": "",
+        "id": "homework-db-verification;verify-the-homework-first-question-s-answer-with-db",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.tearDOwnDBConnection()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "customer id 148 first name \"Eleanor\" last name \"Hunt\" city \"Saint-Denis\" country \"Runion\" total amount \"211.55\" should match with the DB record",
+            "match": {
+              "arguments": [
+                {
+                  "val": "148",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Eleanor\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Hunt\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"Saint-Denis\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"Runion\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"211.55\"",
+                  "offset": 103
+                }
+              ],
+              "location": "stepDefs.Question01StepDef.customer_id_first_name_last_name_city_country_total_amount_should_match_with_the_DB_record(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db"
+          }
+        ]
+      }
+    ],
+    "name": "Homework DB verification",
+    "description": "",
+    "id": "homework-db-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DB.feature",
+    "tags": [
+      {
+        "name": "@db",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
